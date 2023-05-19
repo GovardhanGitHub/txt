@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @page {
+        size: legal landscape;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        } */
+
+      .row {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .table {
+        flex: 1;
+        border: 1px solid black;
+      }
+
+      .picture {
+        flex: 1;
+        text-align: center;
+      }
+
+      @media print {
+        .floating-button {
+          display: none;
+        }
+      }
+
+      @page {
+        size: legal landscape;
+      }
+
+      /* Adjust margins for better fit on the page */
+      @media print {
+        body {
+          margin: 20mm;
+        }
+      }
+
+      /* Rest of the CSS code remains the same */
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 5px;
+      }
+
+      .row {
+        flex: 1;
+        display: flex;
+      }
+
+      .column {
+        flex: 1;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      .row-1 {
+        height: 70%;
+        flex: 0.7;
+      }
+
+      .row-2 {
+        height: 30%;
+        flex: 0.3;
+      }
+
+      .col-1 {
+        width: 30%;
+      }
+
+      .col-2 {
+        width: 70%;
+      }
+
+      .floating-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .print-icon {
+        width: 24px;
+        height: 24px;
+        background-image: url("print-icon.png");
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <table class="table">
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="row">
+        <div class="picture">
+          <img src="hydraulic_actuator.jpg" alt="Hydraulic Actuator" />
+        </div>
+      </div>
+
+      <div class="row">
+        <table class="table">
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row row-1">
+        <div class="column col-1">
+          <!-- Content for column 1 in the first row -->
+        </div>
+        <div class="column col-2">
+          <!-- Content for column 2 in the first row -->
+        </div>
+      </div>
+      <div class="row row-2">
+        <div class="column">
+          <!-- Content for column 1 in the second row -->
+        </div>
+        <div class="column">
+          <!-- Content for column 2 in the second row -->
+        </div>
+        <div class="column">
+          <!-- Content for column 3 in the second row -->
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-button" onclick="window.print()">
+      <div class="print-icon"></div>
+    </div>
+  </body>
+</html>
